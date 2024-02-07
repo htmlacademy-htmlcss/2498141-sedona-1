@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Софья Бандурина](https://up.htmlacademy.ru/htmlcss-individual/1/user/2498141).
-* Наставник: `Неизвестно`.
+* Наставник: [Виктория Никитина](https://htmlacademy.ru/profile/id1217273).
 
 ---
 
