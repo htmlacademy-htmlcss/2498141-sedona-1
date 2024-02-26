@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Гостиницы Седоны</title>
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <link rel="stylesheet" href="#">
+        <link rel="icon" href="#">
+    </head>
+
+    <body>
+        <header class="main-header">
+            <a class="link" href="index.html">
+                <img class="navigation-logo" src="./images/logo-sedona.svg" alt="Навигация на сайт Седона" width="140"
+                    height="70">
+            </a>
+            <nav class="navigation">
+                <ul class="navigation-list">
+                    <li class="navigation-item">
+                        <a class="navigation-link" href="index.html">Главная</a>
+                    </li>
+                    <li class="navigation-item">
+                        <a class="navigation-link" href="#">О Седоне</a>
+                    </li>
+                    <li class="navigation-item curent-page">
+                        <a class="navigation-link" href="catalog.html">Гостиницы</a>
+                    </li>
+                </ul>
+                <ul class="user-nav-list">
+                    <li class="user-nav-item">
+                        <a class="user-nav-link" href="#">
+                            <span class="visually-hidden">Поиск гостиниц</span>
+                        </a>
+                    </li>
+                    <li class="user-nav-item">
+                        <a class="user-nav-link" href="#">
+                            <span class="visually-hidden">Понравившиеся отели</span>
+                        </a>
+                    </li>
+                    <li class="user-nav-item">
+                        <a class="user-nav-link" href="#">Хочу сюда!
+                            <span class="visually-hidden">Переход на поиск гостиницы</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main class="main-inner">
+            <section class="inner-search">
+                <h1 class="search-title">Гостиницы Седоны</h1>
+                <div class="search-container">
+                    <h2 class="search-container-title"><a href="#">Гостиницы</a>
+                    </h2>
+                </div>
+                <section class="infrastructure">
+                    <h2 class="infrastructure-title">Инфраструктура:</h2>
+                    <ul class="infrastructure-list">
+                        <input type="checkbox" checked>
+                        <li class="infrastructure-item">Бассейн</li>
+                        <input type="checkbox" checked>
+                        <li class="infrastructure-item">Парковка</li>
+                        <input type="checkbox">
+                        <li class="infrastructure-item">Wi-Fi</li>
+                    </ul>
+                </section>
+                <section class="housing">
+                    <h2 class="housing-title">Тип жилья:</h2>
+                    <ul class="housing-list">
+                        <input type="radio" value="Гостиница" checked>
+                        <li class="housing-item">Гостиница</li>
+                        <input type="radio">
+                        <li class="housing-item">Мотель</li>
+                        <input type="radio">
+                        <li class="housing-item">Апартаменты</li>
+                    </ul>
+                </section>
+                <section class="prices">
+                    <h2 class="prices-title">Стоимость, ₽:</h2>
+                    <form class="prices-form" action="#" method="post">
+                        <input class="prices-number" type="number" name="number-from" value="0" placeholder="от">
+                        <input class="prices-number" type="number" name="number-before" value="9000" placeholder="до">
+                        <button class="apply-prices" type="submit">Применить</button>
+                        <button class="throw-off-prices" type="submit">Сбросить</button>
+                    </form>
+                </section>
+            </section>
+        </main>
+        <footer class="main-footer">
+            <section class="subscription">
+                <h2 class="subscription-title">Подпишитесь на рассылку</h2>
+                <p class="subscription-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
+                <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
+                    <input class="subscription-field" type="email" name="subscription-email" placeholder="Ваш e-mail"
+                        required>
+                    <button class="subscription-button" type="submit">Подписаться</button>
+                </form>
+            </section>
+            <section class="contacts">
+                <h2 class="visually-hidden">Контакты для связи</h2>
+                <ul class="contacts-list">
+                    <li class="contacts-item">
+                        <a class="contacts-link" href="https://vk.com/htmlacademy">
+                            <span class="visually-hidden">Вконтакте</span>
+                        </a>
+                    </li>
+                    <li class="contacts-item">
+                        <a class="contacts-link" href="https://t.me/htmlacademy ">
+                            <span class="visually-hidden">Телеграм</span>
+                        </a>
+                    </li>
+                    <li class="contacts-item">
+                        <a class="contacts-link" href="https://www.youtube.com/user/htmlacademyru">
+                            <span class="visually-hidden">Ютуб</span>
+                        </a>
+                    </li>
+                </ul>
+                <a class="contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+                <a href="https://htmlacademy.ru/">
+                    <img src="#" alt="Логотип HTML Academy">
+                </a>
+            </section>
+        </footer>
+    </body>
+
+</html>
