@@ -1,0 +1,413 @@
+@font-face {
+    font-family: "PT Sans";
+    font-weight: 400;
+    font-style: normal;
+    src: url("../fonts/ptsans-400.woff2") format("woff2");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "PT Sans";
+    font-weight: 700;
+    font-style: normal;
+    src: url("../fonts/ptsans-700.woff2") format("woff2");
+    font-display: swap;
+}
+
+body {
+    margin: 0;
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+    background-color: #ffffff;
+}
+
+.main-header {
+    color: #000000;
+    background-color: #ffffff;
+}
+
+.navigation {}
+
+.navigation-link {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: center;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: inherit;
+    background-color: inherit;
+}
+
+.navigation-logo {}
+
+.navigation-list {
+    margin: 0;
+    padding: 0;
+}
+
+.navigation-item {}
+
+.curent-page {}
+
+.user-nav-list {
+    margin: 0;
+    padding: 0;
+}
+
+.user-nav-item {}
+
+.visually-hidden {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0);
+}
+
+.user-nav-link {
+    padding: 8px 34px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.favorite-number {
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 10px;
+    width: 20px;
+    height: 20px;
+    background-color: #0cb73d;
+    border-radius: 10px;
+}
+
+.button-want-here {
+    width: 160px;
+    height: 36px;
+    background-color: #756157;
+    border-radius: 4px;
+}
+
+.main-index {}
+
+.hero {
+    margin-bottom: 69px;
+    background-color: #e7f2f9;
+    background-image: url("../images/background-welcome.jpg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    height: 485px;
+    display: block;
+}
+
+.hero-logo {
+    display: block;
+    width: 458px;
+    height: 352px;
+    padding-top: 51px;
+    padding-bottom: 82px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.advantages {}
+
+.advantages-text {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 25px;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.advantages-desc {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 90px;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: center;
+    color: #333333;
+}
+
+.advantages-list {
+    margin: 0;
+    padding: 0;
+}
+
+.advantages-item {}
+
+.advantages-container {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    width: 400px;
+    height: 385px;
+}
+
+.advantages-container-blue1 {
+    color: #ffffff;
+    background-color: #82b3d3;
+}
+
+.advantages-container-blue2 {
+    color: #000000;
+    background-color: rgba(131, 179, 211, 0.12);
+}
+
+.advantages-container-blue3 {
+    color: #000000;
+    background-color: rgba(131, 179, 211, 0.2);
+}
+
+.advantages-title {
+    margin: 0;
+    margin-bottom: 62px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    text-transform: uppercase;
+}
+
+.advantages-description {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21px;
+}
+
+.advantages-padding1 {
+    padding: 102px 85px;
+    width: 230px;
+    height: 181px;
+}
+
+.advantages-padding2 {
+    padding: 112.5px 85px;
+    width: 230px;
+    height: 160px;
+}
+
+.advantages-image {
+    display: block;
+}
+
+.invitation {}
+
+.invitation-text {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.invitation-desc {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 64px;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: center;
+    color: #333333;
+}
+
+.invitation-list {
+    margin: 0;
+    padding: 0;
+}
+
+.invitation-item {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    width: 400px;
+    height: 385px;
+    background-color: rgba(131, 179, 211, 0.12);
+}
+
+.invitation-item-nocolor {
+    background-color: #ffffff;
+}
+
+.invitation-item-padding {
+    padding: 81px 85px;
+    width: 230px;
+    height: 223px;
+}
+
+.invitation-title {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 30px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.invitation-description {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: center;
+    color: #333333;
+}
+
+.search {
+    margin-bottom: 96px;
+    text-align: center;
+}
+
+.search-text {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+    text-transform: uppercase;
+}
+
+.search-desc {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 54px;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 26px;
+    color: #333333;
+}
+
+.search-link {
+    padding: 8px 50px;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    width: 276px;
+    height: 36px;
+    color: #ffffff;
+}
+
+.button-search {
+    width: 376px;
+    height: 52px;
+    background: #756157;
+    border-radius: 4px;
+}
+
+.main-footer {}
+
+.subscription {
+    text-align: center;
+    background-color: #94afc1;
+    background-image: url("../images/background-subscribe.jpg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    height: 414px;
+    display: block;
+    color: #ffffff;
+}
+
+.subscription-title {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+    text-transform: uppercase;
+}
+
+.subscription-text {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 54px;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.subscription-form {}
+
+.subscription-field {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    width: 452px;
+    height: 52px;
+    color: #000000;
+    background: #f2f2f2;
+    border-radius: 4px 0px 0px 4px;
+}
+
+.subscription-button {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 232px;
+    height: 52px;
+    color: #ffffff;
+    background: #82b3d3;
+    border-radius: 0px 4px 4px 0px;
+}
+
+.subscription-padding {
+    padding-top: 96px;
+    padding-bottom: 104px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 684px;
+    height: 214px;
+}
+
+.contacts {}
+
+.contacts-list {
+    margin: 0;
+    padding: 0;
+}
+
+.contacts-item {}
+
+.contacts-phone {
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000000;
+}
