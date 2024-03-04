@@ -104,11 +104,11 @@ body {
 
 .hero {
     margin-bottom: 69px;
-    background-image: url(../images/background-welcome.jpg);
+    background-color: #e7f2f9;
+    background-image: url("../images/background-welcome.jpg");
     background-size: 100% auto;
     background-repeat: no-repeat;
     height: 485px;
-    background-color: #e7f2f9;
     display: block;
 }
 
@@ -163,7 +163,7 @@ body {
 
 .advantages-container-blue1 {
     color: #ffffff;
-    background-color: #82B3D3;
+    background-color: #82b3d3;
 }
 
 .advantages-container-blue2 {
@@ -326,13 +326,13 @@ body {
 
 .subscription {
     text-align: center;
-    background-image: url(../images/background-subscribe.jpg);
+    background-color: #94afc1;
+    background-image: url("../images/background-subscribe.jpg");
     background-size: 100% auto;
     background-repeat: no-repeat;
     height: 414px;
     display: block;
     color: #ffffff;
-    background-color: #94afc1;
 }
 
 .subscription-title {
@@ -365,7 +365,7 @@ body {
     width: 452px;
     height: 52px;
     color: #000000;
-    background: #F2F2F2;
+    background: #f2f2f2;
     border-radius: 4px 0px 0px 4px;
 }
 
@@ -380,7 +380,7 @@ body {
     width: 232px;
     height: 52px;
     color: #ffffff;
-    background: #82B3D3;
+    background: #82b3d3;
     border-radius: 0px 4px 4px 0px;
 }
 
