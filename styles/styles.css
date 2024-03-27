@@ -27,8 +27,14 @@
   overflow: hidden;
 }
 
+html {
+  height: 100%;
+}
+
 body {
   margin: 0;
+  display: flex;
+  min-height: 100%;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 20px;
   line-height: 24px;
@@ -106,7 +112,11 @@ body {
   flex-wrap: wrap;
   width: 350px;
   justify-content: flex-end;
-  align-items: center;
+}
+
+.user-nav-logo {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .user-nav-item {
@@ -159,14 +169,19 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   width: 160px;
+  height: 36px;
   color: #ffffff;
   background-color: #756157;
   border-radius: 4px;
-  margin-left: 20px;
+  margin: 14px 0 14px 20px;
   box-sizing: border-box;
 }
 
 .main-index {}
+
+.main-container {
+  flex-grow: 1;
+}
 
 .hero {
   background-color: #abcdde;
@@ -404,6 +419,12 @@ body {
   background-size: cover;
   display: block;
   color: #ffffff;
+}
+
+.subscription-catalog {
+  color: #000000;
+  background-image: none;
+  background-color: #ffffff;
 }
 
 .subscription-title {
