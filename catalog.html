@@ -14,7 +14,7 @@
         <div class="container">
             <header class="main-header">
                 <a class="link" href="index.html">
-                    <img class="navigation-logo" src="./images/logo-sedona.svg" alt="Навигация на сайт Седона"
+                    <img class="navigation-logo" src="./images/logo-sedona.svg" alt="Навигация на сайт Седона."
                         width="140" height="70">
                 </a>
                 <nav class="navigation">
@@ -30,19 +30,17 @@
                         </li>
                     </ul>
                     <ul class="user-nav-list">
-                        <div class="user-nav-logo">
-                            <li class="user-nav-item">
-                                <a class="user-nav-link user-nav-link-search" href="#">
-                                    <span class="visually-hidden">Поиск гостиниц</span>
-                                </a>
-                            </li>
-                            <li class="user-nav-item">
-                                <a class="user-nav-link user-nav-link-favorite" href="#">
-                                    <span class="visually-hidden">Понравившиеся отели</span>
-                                    <span class="favorite-number">12</span>
-                                </a>
-                            </li>
-                        </div>
+                        <li class="user-nav-item">
+                            <a class="user-nav-link user-nav-link-search" href="#">
+                                <span class="visually-hidden">Поиск гостиниц</span>
+                            </a>
+                        </li>
+                        <li class="user-nav-item">
+                            <a class="user-nav-link user-nav-link-favorite" href="#">
+                                <span class="visually-hidden">Понравившиеся отели</span>
+                                <span class="favorite-number">12</span>
+                            </a>
+                        </li>
                         <li class="user-nav-item">
                             <a class="user-nav-link button-want-here brown-link" href="#">Хочу сюда!</a>
                         </li>
@@ -50,7 +48,7 @@
                 </nav>
             </header>
             <main class="main-inner main-container">
-                <section class="inner-search">
+                <!-- <section class="inner-search">
                     <h1 class="search-title">Гостиницы Седоны</h1>
                     <div class="search-container">
                         <a class="" href="index.html">
@@ -91,34 +89,39 @@
                             <button class="throw-off-prices" type="submit">Сбросить</button>
                         </form>
                     </section>
+                </section> -->
+
+
+                <section class="inner-filter">
+                    <h1 class="search-title">Гостиницы Седоны</h1>
+
+
                 </section>
 
-                <section class="results-inner">
-
-
+                <secion class="results-inner">
                     <section class="results-header">
-                        <h2 class="results-title">Найдено гостиниц:
+                        <h2 class="results-title-number">Найдено гостиниц:
                             <span class="results-number">38</span>
                         </h2>
                         <form class="select-form">
-                            <select name="sorting-select">
-                                <option value="min-price">Сначала дешевые</option>
-                                <option value="max-price">Сначала дорогие</option>
+                            <select name="sorting-select" class="sorting-select">
+                                <option value="sorting-price">Сначала дешевые</option>
+                                <option value="sorting-price">Сначала дорогие</option>
                             </select>
                         </form>
                         <ul class="sorting-hotels-list">
                             <li class="sorting-hotels-item">
-                                <a class="sorting-hotels-link" href="#">
+                                <a class="sorting-hotels-link display-net current-display" href="#">
                                     <span class="visually-hidden">Маленькие карточки</span>
                                 </a>
                             </li>
                             <li class="sorting-hotels-item">
-                                <a class="sorting-hotels-link" href="#">
+                                <a class="sorting-hotels-link display-window" href="#">
                                     <span class="visually-hidden">Крупные карточки</span>
                                 </a>
                             </li>
                             <li class="sorting-hotels-item">
-                                <a class="sorting-hotels-link" href="#">
+                                <a class="sorting-hotels-link display-list" href="#">
                                     <span class="visually-hidden">Список</span>
                                 </a>
                             </li>
@@ -128,75 +131,125 @@
                     <section class="results-hotels">
                         <ul class="results-list">
                             <li class="results-item">
-                                <div class="results-container">
-                                    <img class="results-image" src="#" alt="Мотель Amara Resort & Spa" width="300"
-                                        height="212">
+                                <a class="link-image-hotel" href="#">
+                                    <img class="results-image" src=".//images/hotel-1.jpg"
+                                        alt="Мотель Amara Resort & Spa." width="300" height="212">
+                                </a>
+                                <a class="link-name-hotel" href="#">
                                     <h3 class="results-title">Amara Resort & Spa</h3>
-                                    <div class="results-prices">
-                                        <span class="results-prices-desc">Гостиница</span>
-                                        <span class="results-prices-desc">От 4000 ₽</span>
-                                    </div>
-                                    <div class="results-button">
+                                </a>
+                                <div class="results-prices">
+                                    <span class="results-prices-hotel">Гостиница</span>
+                                    <span class="results-prices-desc">От 4000 ₽</span>
+                                </div>
+                                <div class="results-button">
+                                    <a class="link-results-button link-brown-button brown-link" href="#">
                                         <span class="results-button-desc">Подробнее</span>
+                                    </a>
+                                    <a class="link-results-button link-blue-button blue-link" href="#">
                                         <span class="results-button-desc">В избранное</span>
+                                    </a>
+                                    <div class="link-results-button results-star">
                                         <span class="visually-hidden">Звезды</span>
-                                        <span class="results-button-desc">Рейтинг: 8,5</span>
                                     </div>
+                                    <span class="link-results-button results-button-description">Рейтинг: 8,5</span>
                                 </div>
                             </li>
                             <li class="results-item">
-                                <div class="results-container">
-                                    <img class="results-image" src="#" alt="Мотель Villas at Poco Diablo" width="300"
-                                        height="212">
+                                <a class="link-image-hotel" href="#">
+                                    <img class="results-image" src=".//images/hotel-2.jpg"
+                                        alt="Мотель Villas at Poco Diablo." width="300" height="212"></a>
+                                <a class="link-name-hotel" href="#">
                                     <h3 class="results-title">Villas at Poco Diablo</h3>
-                                    <div class="results-prices">
-                                        <span class="results-prices-desc">Гостиница</span>
-                                        <span class="results-prices-desc">От 5000 ₽</span>
-                                    </div>
-                                    <div class="results-button">
+                                </a>
+                                <div class="results-prices">
+                                    <span class="results-prices-hotel">Гостиница</span>
+                                    <span class="results-prices-desc">От 5000 ₽</span>
+                                </div>
+                                <div class="results-button">
+                                    <a class="link-results-button link-brown-button brown-link" href="#">
                                         <span class="results-button-desc">Подробнее</span>
-                                        <span class="results-button-desc">В избранное</span>
+                                    </a>
+                                    <a class="link-results-button link-blue-button blue-link gree-current-favorites"
+                                        href="#">
+                                        <span class="results-button-desc">В избранном</span>
+                                    </a>
+                                    <div class="link-results-button results-star">
                                         <span class="visually-hidden">Звезды</span>
-                                        <span class="results-button-desc">Рейтинг: 9,2</span>
                                     </div>
+                                    <span class="link-results-button results-button-description">Рейтинг: 9,2</span>
                                 </div>
                             </li>
                             <li class="results-item">
-                                <div class="results-container">
-                                    <img class="results-image" src="#" alt="Desert Quail Inn" width="300" height="212">
+                                <a class="link-image-hotel" href="#">
+                                    <img class="results-image" src=".//images/hotel-3.jpg" alt="Desert Quail Inn."
+                                        width="300" height="212"></a>
+                                <a class="link-name-hotel" href="#">
                                     <h3 class="results-title">Desert Quail Inn</h3>
-                                    <div class="results-prices">
-                                        <span class="results-prices-desc">Гостиница</span>
-                                        <span class="results-prices-desc">От 2500 ₽</span>
-                                    </div>
-                                    <div class="results-button">
+                                </a>
+                                <div class="results-prices">
+                                    <span class="results-prices-hotel">Гостиница</span>
+                                    <span class="results-prices-desc">От 2500 ₽</span>
+                                </div>
+                                <div class="results-button">
+                                    <a class="link-results-button link-brown-button brown-link" href="#">
                                         <span class="results-button-desc">Подробнее</span>
+                                    </a>
+                                    <a class="link-results-button link-blue-button blue-link" href="#">
                                         <span class="results-button-desc">В избранное</span>
+                                    </a>
+                                    <div class="link-results-button results-star">
                                         <span class="visually-hidden">Звезды</span>
-                                        <span class="results-button-desc">Рейтинг: 6,9</span>
                                     </div>
+                                    <span class="link-results-button results-button-description">Рейтинг: 6,9</span>
                                 </div>
                             </li>
                             <li class="results-item">
-                                <div class="results-container">
-                                    <img class="results-image" src="#" alt="Мотель GreenTree Inn" width="300"
-                                        height="212">
+                                <a class="link-image-hotel" href="#">
+                                    <img class="results-image" src=".//images/hotel-4.jpg" alt="Мотель GreenTree Inn."
+                                        width="300" height="212"></a>
+                                <a class="link-name-hotel" href="#">
                                     <h3 class="results-title">GreenTree Inn</h3>
-                                    <div class="results-prices">
-                                        <span class="results-prices-desc">Гостиница</span>
-                                        <span class="results-prices-desc">От 1500 ₽</span>
-                                    </div>
-                                    <div class="results-button">
+                                </a>
+                                <div class="results-prices">
+                                    <span class="results-prices-hotel">Гостиница</span>
+                                    <span class="results-prices-desc">От 1500 ₽</span>
+                                </div>
+                                <div class="results-button">
+                                    <a class="link-results-button link-brown-button brown-link" href="#">
                                         <span class="results-button-desc">Подробнее</span>
+                                    </a>
+                                    <a class="link-results-button link-blue-button blue-link" href="#">
                                         <span class="results-button-desc">В избранное</span>
+                                    </a>
+                                    <div class="link-results-button results-star">
                                         <span class="visually-hidden">Звезды</span>
-                                        <span class="results-button-desc">Рейтинг: 5,0</span>
                                     </div>
+                                    <span class="link-results-button results-button-description">Рейтинг: 5,0</span>
                                 </div>
                             </li>
                         </ul>
                     </section>
-                </section>
+                    <ul class="pagination">
+                        <li class="pagination-number">
+                            <a class="link-pagination link-pagination-current" href="#">1</a>
+                        </li>
+                        <li class="pagination-number">
+                            <a class="link-pagination blue-link" href="#">2</a>
+                        </li>
+                        <li class="pagination-number">
+                            <a class="link-pagination blue-link" href="#">3</a>
+                        </li>
+                        <li class="pagination-number">
+                            <a class="link-pagination blue-link" href="#">4</a>
+                        </li>
+                        <li class="pagination-number">
+                            <a class="link-pagination link-intermediate" href="#">...</a>
+                        </li>
+                        <li class="pagination-number">
+                            <a class="link-pagination blue-link" href="#">10</a>
+                        </li>
+                    </ul>
             </main>
             <footer class="main-footer">
                 <section class="subscription subscription-catalog">
@@ -230,7 +283,7 @@
                     </ul>
                     <a class="contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
                     <a class="html-logo" href="https://htmlacademy.ru/">
-                        <img class="html-logo-icon" src="./images/logo-html-academy.svg" alt="Логотип HTML Academy"
+                        <img class="html-logo-icon" src="./images/logo-html-academy.svg" alt="Логотип HTML Academy."
                             width="115" height="33">
                     </a>
                 </section>
