@@ -4,7 +4,7 @@
   <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="./styles/styles.css">
-    <link rel="icon" href="#">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon1.png">
     <meta name="keywords" content="">
     <meta name="description" content="">
     <title>Сайт города Седона</title>
@@ -71,7 +71,7 @@
           <ul class="advantages-list">
             <li class="advantages-item advantages-item-special">
               <div class="advantages-container">
-                <h3 class="advantages-title">Настоящий городок</h3>
+                <h3 class="advantages-title advantages-title-edit">Настоящий<br>  городок</h3>
                 <p class="advantages-description">Седона — не аттракцион для
                   туристов, там течёт своя жизнь</p>
               </div>
@@ -200,33 +200,158 @@
         </section>
       </footer>
     </div>
-    <div class="modal modal-closed1">
+    <div class="modal modal-closed">
       <div class="modal-window">
-        <section class="hotel-search">
-          <div class="search-close-container">
-          <h1 class="search-data-title">Поиск гостиницы в Седоне</h1>
-          <button class="closing-form" type="button">
-            <span class="visually-hiddennnnnnnn">Закрыть</span>
-          </button>
-        </div>
-          <form class="search-data" action="https://echo.htmlacademy.ru/" method="get">
-            <label class="name-parameter-date">Дата заезда:
-              <input class="parameter-date" type="date" name="arrival-date">
-            </label>
-            <label class="name-parameter-date">Дата выезда:
-              <input class="parameter-date" type="date" name="departure-date">
-            </label>
-            <div class="parameter-people-container">
-            <label class="name-parameter-people">Взрослые:
-              <input class="parameter-people" type="number" name="adult">
-            </label>
-            <label class="name-parameter-people">Дети:
-              <input class="parameter-people" type="number" name="children">
-            </label>
+        <h1 class="search-data-title">Поиск гостиницы в Седоне</h1>
+        <button class="closing-form" type="button">
+          <span class="visually-hidden">Закрыть</span>
+          <svg width="15" height="15" viewBox="0 0 15 15" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M14.4905 1.78288L13.1982 0.49057L7.49048 6.19826L1.78279 0.49057L0.490479 1.78288L6.19817 7.49057L0.490479 13.1983L1.78279 14.4906L7.49048 8.78288L13.1982 14.4906L14.4905 13.1983L8.78279 7.49057L14.4905 1.78288Z"
+              fill="currentColor" />
+          </svg>
+        </button>
+        <form class="search-data" action="https://echo.htmlacademy.ru/" method="post">
+          <div class="parameter-date-container">
+            <label class="name-parameter-date" for="arrival">Дата заезда:</label>
+            <div class="parameter-date-arrival">
+              <input class="parameter-date" type="text" name="arrival-date" value="27 апреля 2020" id="arrival"
+                placeholder="Укажите дату">
+              <svg class="calendar-arrival" width="16" height="15" viewBox="0 0 16 15" fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M5.75 10C6.05 10 6.25 9.8 6.25 9.5C6.25 9.2 6.05 9 5.75 9C5.45 9 5.25 9.2 5.25 9.5C5.25 9.8 5.45 10 5.75 10Z"
+                  fill="currentColor" />
+                <path
+                  d="M15 2H13V0H12V2H4V0H3V2H1C0.4 2 0 2.4 0 3V14C0 14.5 0.4 15 1 15H15C15.5 15 16 14.5 16 14V3C16 2.4 15.5 2 15 2ZM15 14H1V7H15V14ZM1 6V3H3V5H4V3H12V5H13V3H15V6H1Z"
+                  fill="currentColor" />
+                <path d="M8 10C8.3 10 8.5 9.8 8.5 9.5C8.5 9.2 8.3 9 8 9C7.7 9 7.5 9.2 7.5 9.5C7.5 9.8 7.7 10 8 10Z"
+                  fill="currentColor" />
+                <path
+                  d="M10.25 10C10.55 10 10.75 9.8 10.75 9.5C10.75 9.2 10.55 9 10.25 9C9.95 9 9.75 9.2 9.75 9.5C9.75 9.8 9.95 10 10.25 10Z"
+                  fill="currentColor" />
+                <path
+                  d="M5.75 11C5.45 11 5.25 11.2 5.25 11.5C5.25 11.8 5.45 12 5.75 12C6.05 12 6.25 11.8 6.25 11.5C6.25 11.2 6.05 11 5.75 11Z"
+                  fill="currentColor" />
+                <path d="M3.5 10C3.8 10 4 9.8 4 9.5C4 9.2 3.8 9 3.5 9C3.2 9 3 9.2 3 9.5C3 9.8 3.2 10 3.5 10Z"
+                  fill="currentColor" />
+                <path d="M3.5 11C3.2 11 3 11.2 3 11.5C3 11.8 3.2 12 3.5 12C3.8 12 4 11.8 4 11.5C4 11.2 3.8 11 3.5 11Z"
+                  fill="currentColor" />
+                <path
+                  d="M8 11C7.7 11 7.5 11.2 7.5 11.5C7.5 11.8 7.7 12 8 12C8.3 12 8.5 11.8 8.5 11.5C8.5 11.2 8.3 11 8 11Z"
+                  fill="currentColor" />
+                <path
+                  d="M10.25 11C9.95 11 9.75 11.2 9.75 11.5C9.75 11.8 9.95 12 10.25 12C10.55 12 10.75 11.8 10.75 11.5C10.75 11.2 10.55 11 10.25 11Z"
+                  fill="currentColor" />
+                <path
+                  d="M12.5 10C12.8 10 13 9.8 13 9.5C13 9.2 12.8 9 12.5 9C12.2 9 12 9.2 12 9.5C12 9.8 12.2 10 12.5 10Z"
+                  fill="currentColor" />
+                <path
+                  d="M12.5 11C12.2 11 12 11.2 12 11.5C12 11.8 12.2 12 12.5 12C12.8 12 13 11.8 13 11.5C13 11.2 12.8 11 12.5 11Z"
+                  fill="currentColor" />
+              </svg>
+              <p class="warning-window error">Мы не можем отправить вас в прошлое.</p>
+            </div>
           </div>
-            <button class="search-hotel-parameter blue-link" type="button">Найти</button>
-          </form>
-        </section>
+          <div class="parameter-date-container">
+            <label class="name-parameter-date" for="departure">Дата выезда:</label>
+            <div class="parameter-date-departure">
+              <input class="parameter-date" type="text" name="departure-date" value="1 сентября 2023" id="departure"
+                placeholder="Укажите дату">
+              <svg class="calendar-departure" width="16" height="15" viewBox="0 0 16 15" fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M5.75 10C6.05 10 6.25 9.8 6.25 9.5C6.25 9.2 6.05 9 5.75 9C5.45 9 5.25 9.2 5.25 9.5C5.25 9.8 5.45 10 5.75 10Z"
+                  fill="currentColor" />
+                <path
+                  d="M15 2H13V0H12V2H4V0H3V2H1C0.4 2 0 2.4 0 3V14C0 14.5 0.4 15 1 15H15C15.5 15 16 14.5 16 14V3C16 2.4 15.5 2 15 2ZM15 14H1V7H15V14ZM1 6V3H3V5H4V3H12V5H13V3H15V6H1Z"
+                  fill="currentColor" />
+                <path d="M8 10C8.3 10 8.5 9.8 8.5 9.5C8.5 9.2 8.3 9 8 9C7.7 9 7.5 9.2 7.5 9.5C7.5 9.8 7.7 10 8 10Z"
+                  fill="currentColor" />
+                <path
+                  d="M10.25 10C10.55 10 10.75 9.8 10.75 9.5C10.75 9.2 10.55 9 10.25 9C9.95 9 9.75 9.2 9.75 9.5C9.75 9.8 9.95 10 10.25 10Z"
+                  fill="currentColor" />
+                <path
+                  d="M5.75 11C5.45 11 5.25 11.2 5.25 11.5C5.25 11.8 5.45 12 5.75 12C6.05 12 6.25 11.8 6.25 11.5C6.25 11.2 6.05 11 5.75 11Z"
+                  fill="currentColor" />
+                <path d="M3.5 10C3.8 10 4 9.8 4 9.5C4 9.2 3.8 9 3.5 9C3.2 9 3 9.2 3 9.5C3 9.8 3.2 10 3.5 10Z"
+                  fill="currentColor" />
+                <path d="M3.5 11C3.2 11 3 11.2 3 11.5C3 11.8 3.2 12 3.5 12C3.8 12 4 11.8 4 11.5C4 11.2 3.8 11 3.5 11Z"
+                  fill="currentColor" />
+                <path
+                  d="M8 11C7.7 11 7.5 11.2 7.5 11.5C7.5 11.8 7.7 12 8 12C8.3 12 8.5 11.8 8.5 11.5C8.5 11.2 8.3 11 8 11Z"
+                  fill="currentColor" />
+                <path
+                  d="M10.25 11C9.95 11 9.75 11.2 9.75 11.5C9.75 11.8 9.95 12 10.25 12C10.55 12 10.75 11.8 10.75 11.5C10.75 11.2 10.55 11 10.25 11Z"
+                  fill="currentColor" />
+                <path
+                  d="M12.5 10C12.8 10 13 9.8 13 9.5C13 9.2 12.8 9 12.5 9C12.2 9 12 9.2 12 9.5C12 9.8 12.2 10 12.5 10Z"
+                  fill="currentColor" />
+                <path
+                  d="M12.5 11C12.2 11 12 11.2 12 11.5C12 11.8 12.2 12 12.5 12C12.8 12 13 11.8 13 11.5C13 11.2 12.8 11 12.5 11Z"
+                  fill="currentColor" />
+              </svg>
+              <p class="warning-window">На эти даты есть свободные номера. Пока есть.</p>
+            </div>
+          </div>
+          <div class="parameter-people-container">
+            <div class="people-container">
+              <label class="name-parameter-people" for="adult">Взрослые:</label>
+              <div class="people-container-button">
+                <button class="button-decrease button-decrease-increase" type="button">
+                  <span class="visually-hidden">Уменьшить</span>
+                  <svg class="button-minus button-plus-minus" width="14" height="2" viewBox="0 0 14 2"
+                    fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 0L0 2L14 2V0L0 0Z" fill="currentColor" />
+                  </svg>
+                </button>
+                <input class="parameter-people" type="number" name="adult" id="adult" value="2">
+                <button class="button-increase button-decrease-increase" type="button">
+                  <span class="visually-hidden">Увеличить</span>
+                  <svg class="button-plus button-plus-minus" width="20" height="20" viewBox="0 0 20 20"
+                    fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z" fill="currentColor" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="people-container people-pop-up-window">
+              <label class="name-parameter-people" for="children">Дети:</label>
+              <div class="pop-up-window-contaier">
+                <button class="pop-up-window" type="button">
+                  <svg class="button-info" width="26" height="26" viewBox="0 0 26 26" fill="#ffffff" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="13" cy="13" r="13" fill="currentColor"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 7H14V9H12V7ZM14 19H12V10H14V19Z" fill="#ffffff"/>
+                    </svg>
+                </button>
+                <div class="pop-up-window-field">
+                  <p class="pop-up-window-text">Укажите количество детей, которые будут с вами, возраст которых от 6 до
+                    18
+                    лет. Дети до 6 лет
+                    размещаются бесплатно.</p>
+                </div>
+              </div>
+              <div class="people-container-button">
+                <button class="button-decrease button-decrease-increase" type="button">
+                  <span class="visually-hidden">Уменьшить</span>
+                  <svg class="button-minus button-plus-minus" width="14" height="2" viewBox="0 0 14 2"
+                    fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 0L0 2L14 2V0L0 0Z" fill="currentColor" />
+                  </svg>
+                </button>
+                <input class="parameter-people" type="number" name="children" id="children" value="2">
+                <button class="button-increase button-decrease-increase" type="button">
+                  <span class="visually-hidden">Увеличить</span>
+                  <svg class="button-plus button-plus-minus" width="20" height="20" viewBox="0 0 20 20"
+                    fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z" fill="currentColor" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+          <button class="search-hotel-parameter blue-link" type="button">Найти</button>
+        </form>
       </div>
     </div>
   </body>
