@@ -61,7 +61,7 @@ body {
   justify-content: flex-end;
 }
 
-.link {
+.link-logo {
   position: absolute;
   top: 0;
   left: 2px;
@@ -182,8 +182,6 @@ body {
   margin: 14px 0 15px 20px;
   box-sizing: border-box;
 }
-
-.main-index {}
 
 .main-container {
   flex-grow: 1;
@@ -436,8 +434,6 @@ body {
   margin-left: 2px;
 }
 
-.main-footer {}
-
 .subscription {
   padding-top: 96px;
   padding-bottom: 104px;
@@ -566,7 +562,7 @@ body {
 
 .inner-filter {
   background-color: #41647a;
-  background-image: url(../images/background-filter.jpg);
+  background-image: url("../images/background-filter.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   display: block;
@@ -655,8 +651,6 @@ body {
   flex-wrap: wrap;
 }
 
-.fieldset-infrastructure {}
-
 .title {
   padding: 0;
   font-weight: 700;
@@ -665,10 +659,6 @@ body {
   text-transform: capitalize;
   margin: 0 0 32px 6px;
 }
-
-.title-infrastructure {}
-
-.title-type-housing {}
 
 .title-price {
   margin: 0 0 32px 0;
@@ -681,8 +671,6 @@ body {
   margin: 1px 0 15px 42px;
   position: relative;
 }
-
-.fieldset-type-housing {}
 
 .fieldset-price {
   row-gap: 44px;
@@ -752,10 +740,8 @@ body {
   position: relative;
 }
 
-.container-button {}
-
 .selection-price {
-  padding: 14px 24px 10px 20px;
+  padding: 14px 38px 10px 20px;
   width: 143px;
   background: #f2f2f2;
   border: none;
@@ -889,8 +875,6 @@ body {
   padding: 6px 0;
 }
 
-.results-number {}
-
 .container-sorting-select {
   display: flex;
   flex-wrap: wrap;
@@ -910,13 +894,11 @@ body {
   appearance: none;
   margin-right: 58px;
   cursor: pointer;
-  background-image: url(../images/arrow-sorting.svg);
+  background-image: url("../images/arrow-sorting.svg");
   background-repeat: no-repeat;
   background-position: right 18px top 18px;
   border-radius: 4px;
 }
-
-.sorting-price {}
 
 .sorting-hotels-list {
   margin: 0;
@@ -956,8 +938,6 @@ body {
   border: 2px solid #000000;
 }
 
-.results-hotels {}
-
 .results-list {
   padding: 0;
   list-style: none;
@@ -993,7 +973,7 @@ body {
   margin-bottom: 18px;
 }
 
-.link-name-hotel {
+.link-hotel {
   text-decoration: none;
   color: inherit;
 }
@@ -1062,8 +1042,6 @@ body {
 .green-current-favorites {
   background-color: #7db54f;
 }
-
-.results-button-desc {}
 
 .results-star {
   background-image: url("../images/star.svg");
@@ -1298,8 +1276,6 @@ body {
   align-items: center;
 }
 
-.button-info {}
-
 .pop-up-window-text {
   margin: 0;
   font-size: 16px;
@@ -1318,7 +1294,7 @@ body {
 }
 
 .pop-up-window-field {
-  background-image: url(../images/pyramid-pop-up.svg);
+  background-image: url("../images/pyramid-pop-up.svg");
   background-repeat: no-repeat;
   width: 20px;
   height: 10px;
@@ -1377,8 +1353,6 @@ body {
   margin-right: 9px;
 }
 
-.button-plus {}
-
 .parameter-people {
   padding: 0;
   width: 31px;
@@ -1389,7 +1363,6 @@ body {
   font-weight: 700;
   font-size: 18px;
   text-align: center;
-  margin-left: 16px;
 }
 
 .search-hotel-parameter {
@@ -1469,6 +1442,11 @@ body {
   color: rgba(0, 0, 0, 0.3);
 }
 
+.link-hotel:hover,
+.link-hotel:focus {
+  opacity: 0.8;
+}
+
 .form-link:hover {
   background-color: #e6e6e6;
 }
@@ -1526,14 +1504,26 @@ body {
   color: rgba(104, 162, 202, 0.3);
 }
 
-.link:focus {
+.link-logo:hover,
+.link-logo:focus {
   outline: none;
+  opacity: 0.7;
 }
 
 .green-current-favorites:disabled,
 .brown-link:disabled,
 .blue-link:disabled {
   background: #e5e5e5;
+}
+
+.link-pagination-current:hover,
+.link-pagination-current:focus {
+  color: #756157;
+  outline: none;
+}
+
+.link-pagination-current:active {
+  color: rgba(117, 97, 87, 0.3);
 }
 
 .selection-checkbox:hover:before {
@@ -1573,7 +1563,7 @@ body {
 }
 
 .pop-up-window:hover ~ .pop-up-window-field,
-.pop-up-window:active ~ .pop-up-window-field {
+.pop-up-window:focus-within ~ .pop-up-window-field {
   display: block;
 }
 
@@ -1597,6 +1587,13 @@ body {
 .parameter-date:active {
   background-color: #f2f2f2;
   outline: 2px solid #000000;
+}
+
+.parameter-date:hover ~ .calendar-arrival,
+.parameter-date:hover ~ .calendar-departure,
+.parameter-date:focus ~ .calendar-arrival,
+.parameter-date:focus ~ .calendar-departure {
+  opacity: 0.8;
 }
 
 .button-plus-minus:hover {
@@ -1624,4 +1621,13 @@ body {
 .pop-up-window:focus {
   color: #68a2ca;
   outline: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+input[type='number'] {
+  -moz-appearance: textfield;
 }
